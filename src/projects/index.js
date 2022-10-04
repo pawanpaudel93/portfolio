@@ -1,4 +1,4 @@
-export const hackathons = [
+export const hackathonProjects = [
     {
         title: "Online Beatbox Competition",
         description:
@@ -34,5 +34,20 @@ export const hackathons = [
             "https://bafkreidsl63zufa2ixcpxiexbd7s343kmv4wdektmjeegh5n6tdnpl5ehi.ipfs.gateway.valist.io",
         github: "https://github.com/pawanpaudel93/dearwebthree",
         url: "https://app.valist.io/blockchainaholic/dearwebthree",
+    },
+];
+export const web3Projects = [
+    {
+        title: "web-bundlr",
+        description:
+            "A CLI tool to deploy web apps to Arweave using Bundlr Network.",
+        image: "",
+        github: "https://github.com/pawanpaudel93/web-bundlr",
+    },
+    {
+        title: "web-ardrive",
+        description: "A CLI tool to deploy web apps to Arweave using ArDrive.",
+        image: "",
+        github: "https://github.com/pawanpaudel93/web-ardrive",
     },
 ];

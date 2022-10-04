@@ -68,7 +68,7 @@ export default function PortfolioModal({ project }) {
                         <li>
                           <strong>GitHub URL</strong>:{" "}
                           <a
-                            href={project.url}
+                            href={project.github}
                             title="GitHub URL"
                             target="_blank"
                           >

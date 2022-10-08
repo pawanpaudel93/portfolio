@@ -36,12 +36,14 @@ export default function Contact() {
             <div className="info-box">
               <i className="bx bx-envelope"></i>
               <h3>Email Me</h3>
-              <p>***REMOVED***</p>
+              <a href="mailto:***REMOVED***">
+                ***REMOVED***
+              </a>
             </div>
           </div>
         </div>
 
-        <form
+        {/* <form
           action="forms/contact.php"
           method="post"
           role="form"
@@ -98,7 +100,7 @@ export default function Contact() {
           <div className="text-center">
             <button type="submit">Send Message</button>
           </div>
-        </form>
+        </form> */}
       </div>
     </section>
   );

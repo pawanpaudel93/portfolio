@@ -1,3 +1,5 @@
+import TextSvg from "./TextSvg";
+
 export default function PortfolioModal({ project }) {
   return (
     <div
@@ -38,11 +40,15 @@ export default function PortfolioModal({ project }) {
                     <div className="col-lg-4">
                       <div className="portfolio-details-slider swiper">
                         <div className="swiper-wrapper align-items-center">
-                          <img
-                            className="img-fluid"
-                            src={project.image}
-                            alt={`${project.title} image`}
-                          />
+                          {project.image ? (
+                            <img
+                              className="img-fluid"
+                              src={project.image}
+                              alt={`${project.title} image`}
+                            />
+                          ) : (
+                            <TextSvg title={project.title} />
+                          )}
                         </div>
                       </div>
                     </div>

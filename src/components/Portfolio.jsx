@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { hackathonProjects, web3Projects } from "../projects";
+import { hackathonProjects, web3Projects, web2Projects } from "../projects";
 import PortfolioModal from "./PortfolioModal";
+import TextSvg from "./TextSvg";
 
 export default function Portfolio() {
   const [project, setProject] = useState();
@@ -33,7 +34,16 @@ export default function Portfolio() {
                 key={index}
               >
                 <div className="portfolio-wrap">
-                  <img src={project.image} className="img-fluid" alt="" />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      className="img-fluid"
+                      alt=""
+                      width="100%"
+                    />
+                  ) : (
+                    <TextSvg title={project.title} />
+                  )}
                   <div className="portfolio-info">
                     <h4>{project.title}</h4>
                     <p>{project.description}</p>
@@ -61,27 +71,50 @@ export default function Portfolio() {
               >
                 <div className="portfolio-wrap">
                   {project.image ? (
-                    <img src={project.image} className="img-fluid" alt="" />
+                    <img
+                      src={project.image}
+                      className="img-fluid"
+                      alt=""
+                      width="100%"
+                    />
                   ) : (
-                    <svg>
-                      <rect x="0" y="0" fill="#95B3D7"></rect>
-                      <a
-                        href="https://www.google.com"
-                        style={{ cursor: "pointer" }}
-                        target="_blank"
+                    <TextSvg title={project.title} />
+                  )}
+                  <div className="portfolio-info">
+                    <h4>{project.title}</h4>
+                    <p>{project.description}</p>
+                    <div style={{ marginTop: "5px" }}>
+                      <button
+                        type="button"
+                        className="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#portfolioModal"
+                        onClick={() => {
+                          setProject(project);
+                        }}
                       >
-                        <text
-                          x="10"
-                          y="100"
-                          style={{
-                            fontSize: "48px",
-                            fill: "white",
-                          }}
-                        >
-                          {project.title}
-                        </text>
-                      </a>
-                    </svg>
+                        Detail
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+            {web2Projects.map((project, index) => (
+              <div
+                className="col-lg-4 col-md-6 portfolio-item filter-web2"
+                key={index}
+              >
+                <div className="portfolio-wrap">
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      className="img-fluid"
+                      alt=""
+                      width="100%"
+                    />
+                  ) : (
+                    <TextSvg title={project.title} />
                   )}
                   <div className="portfolio-info">
                     <h4>{project.title}</h4>

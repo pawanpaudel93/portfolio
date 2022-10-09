@@ -20,11 +20,6 @@ export default function Resume() {
                   with different web3 technologies.
                 </em>
               </p>
-
-              <ul>
-                <li>***REMOVED***</li>
-                <li>***REMOVED***</li>
-              </ul>
             </div>
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">

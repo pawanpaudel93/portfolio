@@ -36,8 +36,8 @@ export default function Contact() {
             <div className="info-box">
               <i className="bx bx-envelope"></i>
               <h3>Email Me</h3>
-              <a href="mailto:***REMOVED***">
-                ***REMOVED***
+              <a href="mailto:pawanpaudel93@gmail.com">
+                pawanpaudel93@gmail.com
               </a>
             </div>
           </div>

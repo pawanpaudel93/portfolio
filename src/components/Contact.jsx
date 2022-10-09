@@ -1,3 +1,5 @@
+import { openGithub, openTwitter, openLinkedin, sendEmail } from "../utils";
+
 export default function Contact() {
   return (
     <section id="contact" className="contact">
@@ -13,19 +15,13 @@ export default function Contact() {
               <i className="bx bx-share-alt"></i>
               <h3>Social Profiles</h3>
               <div className="social-links">
-                <a href="https://github.com/pawanpaudel93" className="github">
+                <a onClick={openGithub} className="github">
                   <i className="bi bi-github"></i>
                 </a>
-                <a
-                  href="https://twitter.com/Blokchainaholic"
-                  className="twitter"
-                >
+                <a onClick={openTwitter} className="twitter">
                   <i className="bi bi-twitter"></i>
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/pawan-paudel/"
-                  className="linkedin"
-                >
+                <a onClick={openLinkedin} className="linkedin">
                   <i className="bi bi-linkedin"></i>
                 </a>
               </div>
@@ -35,10 +31,11 @@ export default function Contact() {
           <div className="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
             <div className="info-box">
               <i className="bx bx-envelope"></i>
-              <h3>Email Me</h3>
-              <a href="mailto:pawanpaudel93@gmail.com">
-                pawanpaudel93@gmail.com
-              </a>
+              <h3>
+                <a href="" onClick={sendEmail}>
+                  Email Me
+                </a>
+              </h3>
             </div>
           </div>
         </div>

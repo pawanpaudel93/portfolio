@@ -120,6 +120,7 @@ h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  cursor: pointer 
 }
 
 #header .social-links a:hover {
@@ -1034,6 +1035,7 @@ section .container {
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .contact .info-box .social-links a:hover {

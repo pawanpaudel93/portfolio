@@ -1,3 +1,5 @@
+import { openGithub, openTwitter, openLinkedin, sendEmail } from "../utils";
+
 export default function Header() {
   return (
     <header id="header">
@@ -46,17 +48,17 @@ export default function Header() {
         {/* <!-- .navbar --> */}
 
         <div className="social-links">
-          <a href="https://github.com/pawanpaudel93" className="github">
+          <a onClick={openGithub} className="github">
             <i className="bi bi-github"></i>
           </a>
-          <a href="https://twitter.com/Blokchainaholic" className="twitter">
+          <a onClick={openTwitter} className="twitter">
             <i className="bi bi-twitter"></i>
           </a>
-          <a
-            href="https://www.linkedin.com/in/pawan-paudel/"
-            className="linkedin"
-          >
+          <a onClick={openLinkedin} className="linkedin">
             <i className="bi bi-linkedin"></i>
+          </a>
+          <a onClick={sendEmail} className="email">
+            <i className="bx bx-envelope"></i>
           </a>
         </div>
       </div>

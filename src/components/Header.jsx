@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { openGithub, openTwitter, openLinkedin, sendEmail } from "../utils";
 
 export default function Header() {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <header id="header">
       <div className="container">
@@ -15,7 +17,7 @@ export default function Header() {
           I'm a passionate <span>blockend developer</span> from Nepal
         </h2>
 
-        <nav id="navbar" className="navbar">
+        <nav id="navbar" className={openMenu ? "navbar-mobile" : "navbar"}>
           <ul>
             <li>
               <a className="nav-link active" href="#header">
@@ -43,7 +45,12 @@ export default function Header() {
               </a>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          <i
+            className={
+              "bi mobile-nav-toggle " + (openMenu ? "bi-x" : "bi-list")
+            }
+            onClick={(e) => setOpenMenu(!openMenu)}
+          ></i>
         </nav>
         {/* <!-- .navbar --> */}
 

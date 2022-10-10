@@ -40,15 +40,6 @@ export function loadAllEventListeners() {
     }
 
     /**
-     * Mobile nav toggle
-     */
-    on('click', '.mobile-nav-toggle', function (e) {
-        select('#navbar').classList.toggle('navbar-mobile')
-        this.classList.toggle('bi-list')
-        this.classList.toggle('bi-x')
-    })
-
-    /**
      * Scrool with ofset on links with a class name .scrollto
      */
     on('click', '#navbar .nav-link', function (e) {
@@ -142,52 +133,6 @@ export function loadAllEventListeners() {
     });
 
     /**
-     * Skills animation
-     */
-    let skilsContent = select('.skills-content');
-    if (skilsContent) {
-        new Waypoint({
-            element: skilsContent,
-            offset: '80%',
-            handler: function (direction) {
-                let progress = select('.progress .progress-bar', true);
-                progress.forEach((el) => {
-                    el.style.width = el.getAttribute('aria-valuenow') + '%'
-                });
-            }
-        })
-    }
-
-    /**
-     * Testimonials slider
-     */
-    new Swiper('.testimonials-slider', {
-        speed: 600,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        slidesPerView: 'auto',
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            }
-        }
-    });
-
-    /**
      * Porfolio isotope and filter
      */
     window.addEventListener('load', () => {
@@ -247,11 +192,6 @@ export function loadAllEventListeners() {
             clickable: true
         }
     });
-
-    /**
-     * Initiate Pure Counter 
-     */
-    new PureCounter();
 }
 
 export function openGithub(event) {

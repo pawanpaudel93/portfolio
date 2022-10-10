@@ -49,16 +49,16 @@ export default function Resume() {
               <ul>
                 <li>
                   Worked on different Python Automation projects using Selenium
-                  & created dashboard with Django for all the projects.
+                  & created dashboard with Django for all those projects.
                 </li>
                 <li>
                   Created a web app to control the different servers and the
-                  automation with Flask APIs and Vue.
+                  automation with Flask APIs and VueJS.
                 </li>
                 <li>
                   Worked on a project called HeliumControl created using Django
-                  Rest Framework (DRF) and Vue to manage and visualize the stats
-                  of different helium hotspots.
+                  Rest Framework (DRF) and VueJS to manage and visualize the
+                  stats of different helium hotspots.
                 </li>
               </ul>
             </div>

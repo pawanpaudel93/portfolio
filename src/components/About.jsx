@@ -41,10 +41,6 @@ export default function About() {
                     <strong>Degree:</strong>{" "}
                     <span>Bachelors in Computer Engineering</span>
                   </li>
-                  <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Email:</strong> <span>pawanpaudel93@gmail.com</span>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -88,7 +84,7 @@ export default function About() {
                 className="ri-calendar-todo-line"
                 style={{ color: "#e80368" }}
               ></i>
-              <h3>NextJS</h3>
+              <h3>Ethers.js</h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
@@ -97,7 +93,7 @@ export default function About() {
                 className="ri-paint-brush-line"
                 style={{ color: "#e361ff" }}
               ></i>
-              <h3>NuxtJS</h3>
+              <h3>Python</h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
@@ -106,7 +102,7 @@ export default function About() {
                 className="ri-database-2-line"
                 style={{ color: "#47aeff" }}
               ></i>
-              <h3>Python</h3>
+              <h3>NodeJS</h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
@@ -115,7 +111,7 @@ export default function About() {
                 className="ri-gradienter-line"
                 style={{ color: "#ffa76e" }}
               ></i>
-              <h3>NodeJS</h3>
+              <h3>Django Rest Framework</h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
@@ -124,7 +120,7 @@ export default function About() {
                 className="ri-file-list-3-line"
                 style={{ color: "#11dbcf" }}
               ></i>
-              <h3>Django Rest Framework</h3>
+              <h3>Flask</h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
@@ -133,19 +129,19 @@ export default function About() {
                 className="ri-price-tag-2-line"
                 style={{ color: "#4233ff" }}
               ></i>
-              <h3>Flask</h3>
+              <h3>NextJS</h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
             <div className="icon-box">
               <i className="ri-anchor-line" style={{ color: "#b2904f" }}></i>
-              <h3>PostgreSQL</h3>
+              <h3>NuxtJS</h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
             <div className="icon-box">
               <i className="ri-disc-line" style={{ color: "#b20969" }}></i>
-              <h3>Ethers</h3>
+              <h3>PostgreSQL</h3>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">

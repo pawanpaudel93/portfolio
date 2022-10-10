@@ -18,7 +18,7 @@ echo > .nojekyll
 git init
 git checkout -B main
 git add -A
-git commit -m 'deploy'
+git commit -m 'Update'
 
 # if you are deploying to https://<USERNAME>.github.io
 git push -f git@github.com:pawanpaudel93/pawanpaudel93.github.io.git main

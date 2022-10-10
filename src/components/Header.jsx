@@ -3,6 +3,13 @@ import { openGithub, openTwitter, openLinkedin, sendEmail } from "../utils";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
+
+  function onClick(e) {
+    if (openMenu) {
+      setOpenMenu(false);
+    }
+  }
+
   return (
     <header id="header">
       <div className="container">
@@ -17,30 +24,33 @@ export default function Header() {
           I'm a passionate <span>blockend developer</span> from Nepal
         </h2>
 
-        <nav id="navbar" className={openMenu ? "navbar-mobile" : "navbar"}>
+        <nav
+          id="navbar"
+          className={openMenu ? "navbar navbar-mobile" : "navbar"}
+        >
           <ul>
             <li>
-              <a className="nav-link active" href="#header">
+              <a className="nav-link active" href="#header" onClick={onClick}>
                 Home
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#about">
+              <a className="nav-link" href="#about" onClick={onClick}>
                 About
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#resume">
+              <a className="nav-link" href="#resume" onClick={onClick}>
                 Resume
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#portfolio">
+              <a className="nav-link" href="#portfolio" onClick={onClick}>
                 Portfolio
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#contact">
+              <a className="nav-link" href="#contact" onClick={onClick}>
                 Contact
               </a>
             </li>

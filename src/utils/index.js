@@ -4,6 +4,10 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+import GLightbox from 'glightbox';
+import Swiper from 'swiper';
+import Isotope from "isotope-layout"
+
 export function loadAllEventListeners() {
     const select = (el, all = false) => {
         el = el.trim()

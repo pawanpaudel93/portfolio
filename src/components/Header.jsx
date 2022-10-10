@@ -65,7 +65,7 @@ export default function Header() {
             <i className="bi bi-linkedin"></i>
           </a>
           <a onClick={sendEmail} className="email">
-            <i className="bx bx-envelope"></i>
+            <i className="bi bi-envelope"></i>
           </a>
         </div>
       </div>

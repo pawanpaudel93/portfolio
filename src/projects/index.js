@@ -1,5 +1,12 @@
 export const hackathonProjects = [
     {
+        title: "Scrapy IPFS Filecoin",
+        description: "A Python package that provides scrapy pipelines and feed exports to store items to IPFS & Filecoin using Web3Storage, LightHouse, Estuary, Pinata and Moralis.",
+        image: "https://raw.githubusercontent.com/pawanpaudel93/scrapy-ipfs-filecoin/main/logo.png",
+        github: "https://github.com/pawanpaudel93/scrapy-ipfs-filecoin",
+        url: "https://devpost.com/software/scrapy-ipfs-filecoin"
+    },
+    {
         title: "Online Beatbox Competition",
         description:
             "Online Beatbox Competition is the decentralized application to create and manage beatbox competitions utilizing web3 technologies.",
@@ -36,6 +43,13 @@ export const hackathonProjects = [
         url: "https://app.valist.io/blockchainaholic/dearwebthree",
     },
     {
+        title: "bloXchange",
+        description: "BloXchange is a products marketplace which lets users to buy and sell their products on top of the blockchain.",
+        image: "https://user-images.githubusercontent.com/54351909/202466660-240dc66b-da74-4c73-9689-9153d0e4cd76.png",
+        github: "https://github.com/pawanpaudel93/bloXchange",
+        url: "https://devpost.com/software/bloxchange"
+    },
+    {
         title: "add-to-web3",
         description:
             "Github Action to upload your website to Web3.Storage and Moralis",
@@ -59,6 +73,7 @@ export const hackathonProjects = [
         url: "https://app.valist.io/blockchainaholic/dearwebthree",
     },
 ];
+
 export const web3Projects = [
     {
         title: "web-bundlr",
@@ -78,14 +93,9 @@ export const web3Projects = [
         description: "Solutions for https://ethernaut.openzeppelin.com",
         image: "",
         github: "https://github.com/pawanpaudel93/playing-ethernaut",
-    },
-    {
-        title: "More...",
-        description: "More projects...",
-        image: "",
-        github: "https://github.com/pawanpaudel93"
     }
 ];
+
 export const web2Projects = [
     {
         title: "DjaVue IPTV",
@@ -134,11 +144,5 @@ export const web2Projects = [
         description: "A VUE webapp to make videos appear to be shorter by modifying the underlying duration metadata so that longer videos can be uploaded to websites like TikTok.",
         image: "https://raw.githubusercontent.com/pawanpaudel93/longify-tiktok/main/src/assets/logo.png",
         github: "https://github.com/pawanpaudel93/longify-tiktok"
-    },
-    {
-        title: "More...",
-        description: "More projects...",
-        image: "",
-        github: "https://github.com/pawanpaudel93"
     }
 ];

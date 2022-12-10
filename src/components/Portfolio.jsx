@@ -38,8 +38,11 @@ export default function Portfolio() {
                     <img
                       src={project.image}
                       className="img-fluid"
-                      alt=""
+                      alt={project.title}
                       width="100%"
+                      style={{
+                        height: "300px",
+                      }}
                     />
                   ) : (
                     <TextSvg title={project.title} />
@@ -74,8 +77,11 @@ export default function Portfolio() {
                     <img
                       src={project.image}
                       className="img-fluid"
-                      alt=""
+                      alt={project.title}
                       width="100%"
+                      style={{
+                        height: "300px",
+                      }}
                     />
                   ) : (
                     <TextSvg title={project.title} />
@@ -110,8 +116,11 @@ export default function Portfolio() {
                     <img
                       src={project.image}
                       className="img-fluid"
-                      alt=""
+                      alt={project.title}
                       width="100%"
+                      style={{
+                        height: "300px",
+                      }}
                     />
                   ) : (
                     <TextSvg title={project.title} />

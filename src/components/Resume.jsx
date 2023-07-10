@@ -43,7 +43,7 @@ export default function Resume() {
             <h3 className="resume-title">Working Experience</h3>
             <div className="resume-item">
               <h4>Part-Time Developer at Longview Labs</h4>
-              <h5>Mar 2023 - Present</h5>
+              <h5>Jan 2023 - Present</h5>
 
               <ul>
                 <li>

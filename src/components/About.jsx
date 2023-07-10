@@ -15,10 +15,10 @@ export default function About() {
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Freelance Software Developer</h3>
             <p className="fst-italic">
-              Hi, Iam Pawan, a passionate, enthusiast, focused and self taught
-              developer with 2+ years of freelance experience working with
-              different web2 technologies and nearly 1 year of experience
-              playing around with different web3 technologies.
+              Hi, I am Pawan, a passionate, enthusiast, focused and self taught
+              developer with over 3 years of freelance experience working with
+              different web2 technologies and over 1 year of experience playing
+              around with different web3 technologies.
             </p>
             <div className="row">
               <div className="col-lg-6">
@@ -47,9 +47,9 @@ export default function About() {
             <p>
               I am working on the different web2 projects as a freelance
               developer and on the same time I am also involved in learning and
-              developing projects in web3. I have participated in 4 web3
-              hackathons in the past 6 months and won atleast a sponser prizes
-              in all of them.
+              developing projects in web3. I have participated in 5 web3
+              hackathons in the past 1 year and won atleast a sponser prizes in
+              all of them.
             </p>
           </div>
         </div>

@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { hackathonProjects, web3Projects, web2Projects } from "../projects";
+import {
+  hackathonProjects,
+  web3Projects,
+  web2Projects,
+} from "@/utils/projects";
 import PortfolioModal from "./PortfolioModal";
 import TextSvg from "./TextSvg";
 

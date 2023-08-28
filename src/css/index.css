@@ -7,4 +7,39 @@
   #header.header-top h2 {
     display: none;
   }
+
+  .mobile-nav-toggle {
+    @apply text-white text-4xl cursor-pointer hidden transition duration-500 fixed right-[15px] top-[15px];
+  }
+
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {
+      @apply block;
+    }
+
+    .navbar ul {
+      @apply hidden;
+    }
+  }
+
+  .navbar-mobile {
+    @apply fixed overflow-hidden top-0 right-0 left-0 bottom-0 bg-black bg-opacity-90 transition duration-300 z-50;
+  }
+
+  .navbar-mobile .mobile-nav-toggle {
+    @apply absolute top-[15px] right-[15px];
+  }
+
+  .navbar-mobile ul {
+    @apply block absolute top-[28px] right-[15px] bottom-[45px] left-[15px] py-10 overflow-y-auto transition duration-300 border-2 border-white border-opacity-20;
+  }
+
+  .navbar-mobile li {
+    @apply py-4 px-5;
+  }
+
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    @apply text-base relative;
+  }
 }

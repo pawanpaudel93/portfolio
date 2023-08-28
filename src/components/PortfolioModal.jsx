@@ -1,60 +1,68 @@
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
 import TextSvg from "./TextSvg";
+import { CloseSvg } from "@/assets";
 
-export default function PortfolioModal({ project }) {
+export default function PortfolioModal({ project, setProject }) {
+  function closeModal() {
+    setProject(null);
+  }
+
   return (
-    <div
-      className="modal fade"
-      id="portfolioModal"
-      tabIndex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal"
-      aria-hidden="true"
-    >
-      <div
-        className="modal-dialog modal-dialog-centered modal-xl"
-        role="document"
-      >
-        {project && (
-          <div
-            className="modal-content"
-            style={{ background: "rgba(0, 0, 0, 0.8)" }}
-          >
-            <div className="modal-header">
-              <h2 className="modal-title portfolio-title" id="ModalLongTitle">
-                {project.title}
-              </h2>
-              <button
-                className="btn-close"
-                type="button"
-                style={{
-                  background: `transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat`,
-                }}
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body">
-              <div id="portfolio-details" className="portfolio-details">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-4">
-                      <div className="portfolio-details-slider swiper">
-                        <div className="swiper-wrapper align-items-center">
-                          {project.image ? (
-                            <img
-                              className="img-fluid"
-                              src={project.image}
-                              alt={`${project.title} image`}
-                            />
-                          ) : (
-                            <TextSvg title={project.title} />
-                          )}
-                        </div>
-                      </div>
+    <Transition appear show={!!project} as={Fragment}>
+      <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Transition.Child
+          as={Fragment}
+          enter="ease-out duration-300"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="ease-in duration-200"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className="fixed inset-0 bg-black bg-opacity-25" />
+        </Transition.Child>
+
+        <div className="fixed inset-0 overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-[#040404] p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Title
+                  as="h3"
+                  className="flex justify-between text-lg font-medium leading-6 text-white-900 pb-3"
+                >
+                  <span>{project.title}</span>
+                  <CloseSvg
+                    className="h-4 cursor-pointer w-max transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-150"
+                    onClick={() => setProject(null)}
+                  />
+                </Dialog.Title>
+                <Dialog.Description>
+                  <div className="flex max-lg:flex-col gap-3">
+                    <div className="flex items-center justify-center">
+                      {project.image ? (
+                        <img
+                          className="h-[300px] w-auto rounded-md"
+                          src={project.image}
+                          alt={`${project.title} image`}
+                        />
+                      ) : (
+                        <TextSvg title={project.title} />
+                      )}
                     </div>
 
-                    <div className="col-lg-8 portfolio-info">
-                      <h3>Project information</h3>
+                    <div className="flex flex-1 flex-col gap-3 items-center justify-start">
+                      <h3 className="text-xl font-bold font-poppins">
+                        Project information
+                      </h3>
                       <ul>
                         <li>
                           <strong>Name</strong>: {project.title}
@@ -66,6 +74,7 @@ export default function PortfolioModal({ project }) {
                               href={project.url}
                               title="Hackathon URL"
                               target="_blank"
+                              className="text-main"
                             >
                               {project.url}
                             </a>
@@ -77,6 +86,7 @@ export default function PortfolioModal({ project }) {
                             href={project.github}
                             title="GitHub URL"
                             target="_blank"
+                            className="text-main"
                           >
                             {project.github}
                           </a>
@@ -86,12 +96,12 @@ export default function PortfolioModal({ project }) {
                       <p>{project.description}</p>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
+                </Dialog.Description>
+              </Dialog.Panel>
+            </Transition.Child>
           </div>
-        )}
-      </div>
-    </div>
+        </div>
+      </Dialog>
+    </Transition>
   );
 }

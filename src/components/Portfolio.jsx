@@ -11,7 +11,7 @@ import SectionTitle from "./SectionTitle";
 const Tabs = ["All", "Web3", "Hackathons", "Web2"];
 
 export default function Portfolio() {
-  const [project, setProject] = useState();
+  const [project, setProject] = useState(null);
   const [activeTab, setActiveTab] = useState("All");
   const projects = useMemo(() => {
     if (activeTab === "All") {
@@ -74,6 +74,8 @@ export default function Portfolio() {
                       <div className="mt-[5px]">
                         <button
                           type="button"
+                          data-modal-target="defaultModal"
+                          data-modal-toggle="defaultModal"
                           className="py-2 px-3 bg-[#18d26e] rounded-md hover:opacity-90"
                           onClick={() => {
                             setProject(project);
@@ -90,7 +92,7 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-      <PortfolioModal project={project} />
+      {project && <PortfolioModal project={project} setProject={setProject} />}
     </>
   );
 }

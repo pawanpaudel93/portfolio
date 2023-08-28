@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "5.2.1",
     "isotope-layout": "^3.0.6",

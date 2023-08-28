@@ -14,3 +14,5 @@ export { ReactComponent as LinkedinSvg } from "./linkedin.svg";
 export { ReactComponent as GithubSvg } from "./github.svg";
 export { ReactComponent as TwitterSvg } from "./twitter.svg";
 export { ReactComponent as EmailSvg } from "./email.svg";
+export { ReactComponent as HamburgerSvg } from "./hamburger.svg";
+export { ReactComponent as CloseSvg } from "./close.svg";

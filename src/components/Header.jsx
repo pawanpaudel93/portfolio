@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { openGithub, openTwitter, openLinkedin, sendEmail } from "@/utils";
-import { EmailSvg, GithubSvg, LinkedinSvg, TwitterSvg } from "@/assets";
+import {
+  EmailSvg,
+  GithubSvg,
+  LinkedinSvg,
+  TwitterSvg,
+  HamburgerSvg,
+  CloseSvg,
+} from "@/assets";
 
 const navigationLinks = [
   { text: "Home", target: "#header" },
@@ -50,9 +57,15 @@ export default function Header() {
             ))}
           </ul>
           <i
-            className={`bi mobile-nav-toggle ${openMenu ? "bi-x" : "bi-list"}`}
+            className={`bi mobile-nav-toggle`}
             onClick={() => setOpenMenu(!openMenu)}
-          ></i>
+          >
+            {openMenu ? (
+              <CloseSvg style={{ height: "24px", width: "max-content" }} />
+            ) : (
+              <HamburgerSvg style={{ height: "24px", width: "max-content" }} />
+            )}
+          </i>
         </nav>
 
         <div className="social-links">

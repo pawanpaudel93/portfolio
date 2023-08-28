@@ -1,4 +1,3 @@
-import { EthersSvg } from "@/assets";
 import {
   DjangoSvg,
   FlaskSvg,
@@ -11,7 +10,8 @@ import {
   ScrapySvg,
   SeleniumSvg,
   SoliditySvg,
-} from "../assets";
+  EthersSvg,
+} from "@/assets";
 
 const skills = [
   { Icon: SoliditySvg, name: "Solidity" },
@@ -77,7 +77,7 @@ export default function About() {
             <p>
               I am working on the different web2 projects as a freelance
               developer and on the same time I am also involved in learning and
-              developing projects in web3. I have participated in 5 web3
+              developing projects in web3. I have participated in 6 web3
               hackathons in the past 1 year and won atleast a sponser prizes in
               all of them.
             </p>

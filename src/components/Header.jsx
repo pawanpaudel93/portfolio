@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { openGithub, openTwitter, openLinkedin, sendEmail } from "@/utils";
 import {
   EmailSvg,
@@ -27,6 +27,10 @@ const socialLinks = [
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
+  function getHash() {
+    return window ? window.location.hash : "#header";
+  }
+
   function onClick() {
     if (openMenu) {
       setOpenMenu(false);
@@ -52,7 +56,9 @@ export default function Header() {
             {navigationLinks.map((link, index) => (
               <li key={index}>
                 <a
-                  className="nav-link hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#18d26e]"
+                  className={`nav-link hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#18d26e] ${
+                    getHash() === link.target ? "active" : ""
+                  }`}
                   href={link.target}
                   onClick={onClick}
                 >

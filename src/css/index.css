@@ -42,4 +42,8 @@
   .navbar-mobile a:focus {
     @apply text-base relative;
   }
+
+  .active {
+    @apply underline underline-offset-8 decoration-2 decoration-[#18d26e];
+  }
 }

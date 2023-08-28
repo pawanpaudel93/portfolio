@@ -6,9 +6,9 @@ export default function Resume() {
       <div className="container">
         <SectionTitle title="Resume" description="Check My Resume" />
 
-        <div className="row">
-          <div className="col-lg-6">
-            <h3 className="resume-title">Summary</h3>
+        <div className="flex max-lg:flex-col">
+          <div>
+            <h3 className="text-[26px] font-bold my-4">Summary</h3>
             <div className="resume-item pb-0">
               <h4>Pawan Paudel</h4>
               <p>
@@ -20,7 +20,7 @@ export default function Resume() {
                 </em>
               </p>
             </div>
-            <h3 className="resume-title">Education</h3>
+            <h3 className="text-[26px] font-bold my-4">Education</h3>
             <div className="resume-item">
               <h4>Bachelor of Computer Engineering</h4>
               <h5>2015 - 2019</h5>
@@ -38,8 +38,8 @@ export default function Resume() {
               </p>
             </div>
           </div>
-          <div className="col-lg-6">
-            <h3 className="resume-title">Working Experience</h3>
+          <div>
+            <h3 className="text-[26px] font-bold my-4">Working Experience</h3>
             <div className="resume-item">
               <h4>Part-Time Developer at Longview Labs</h4>
               <h5>Jan 2023 - Present</h5>

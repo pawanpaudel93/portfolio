@@ -46,4 +46,38 @@
   .active {
     @apply underline underline-offset-8 decoration-2 decoration-[#18d26e];
   }
+
+  /* resume */
+  .resume .resume-title {
+    @apply text-[26px] font-bold my-5 text-white;
+  }
+
+  .resume .resume-item {
+    @apply pl-5 pb-5 -mt-[2px] relative border-l-2 border-solid border-[#ffffff33];
+  }
+
+  .resume .resume-item h4 {
+    @apply leading-[18px] text-[18px] font-[600] uppercase font-poppins text-[#18d26e] mb-[10px];
+  }
+
+  .resume .resume-item h5 {
+    @apply text-base bg-[#ffffff26] py-[5px] px-[15px] inline-block font-[600] mb-[10px];
+  }
+
+  .resume .resume-item ul {
+    @apply pl-5;
+  }
+
+  .resume .resume-item ul li {
+    @apply pb-[10px];
+  }
+
+  .resume .resume-item:last-child {
+    @apply pb-0;
+  }
+
+  .resume .resume-item::before {
+    content: "";
+    @apply absolute w-4 h-4 rounded-[50px] -left-[9px] top-0 bg-[#18d26e] border-[2px] border-solid border-[#18d26e];
+  }
 }

@@ -36,21 +36,26 @@ export default function Header() {
   return (
     <header id="header">
       <div className="container">
-        <h1>
+        <h1 className="text-white text-5xl font-bold font-poppins">
           <a href="/">Pawan Paudel</a>
         </h1>
-        <h2>
-          I'm a passionate <span>backend developer</span> from Nepal
+        <h2 className="text-xl mt-4 text-slate-300">
+          I'm a passionate{" "}
+          <span className="underline underline-offset-8 decoration-3 decoration-[#18d26e]">
+            backend developer
+          </span>{" "}
+          from Nepal
         </h2>
 
-        <nav
-          id="navbar"
-          className={`navbar ${openMenu ? "navbar-mobile" : ""}`}
-        >
-          <ul>
+        <nav id="navbar" className={`${openMenu ? "navbar-mobile" : ""}`}>
+          <ul className="flex gap-8 mt-8 text-slate-300 max-lg:hidden">
             {navigationLinks.map((link, index) => (
               <li key={index}>
-                <a className="nav-link" href={link.target} onClick={onClick}>
+                <a
+                  className="nav-link hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#18d26e]"
+                  href={link.target}
+                  onClick={onClick}
+                >
                   {link.text}
                 </a>
               </li>
@@ -68,9 +73,13 @@ export default function Header() {
           </i>
         </nav>
 
-        <div className="social-links">
+        <div className="social-links flex gap-3 mt-10">
           {socialLinks.map((link, index) => (
-            <a key={index} onClick={link.onClick} className={link.className}>
+            <a
+              key={index}
+              onClick={link.onClick}
+              className="flex justify-center items-center rounded-full p-2 w-10 h-10 cursor-pointer bg-slate-50 hover:bg-slate-300"
+            >
               {link.icon}
             </a>
           ))}

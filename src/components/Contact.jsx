@@ -1,5 +1,6 @@
 import { GithubSvg, LinkedinSvg, TwitterSvg, EmailSvg } from "@/assets";
 import { openGithub, openTwitter, openLinkedin, sendEmail } from "@/utils";
+import SectionTitle from "./SectionTitle";
 
 const socialLinks = [
   {
@@ -20,15 +21,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container p-[30px] bg-[#000000e6]">
-        <div className="flex flex-col">
-          <div className="flex gap-2 items-center font-[500] text-[14px] tracking-[1px] uppercase">
-            <h2>Contact</h2>
-            <div className="w-[120px] h-[1px] bg-[#4ceb95]"></div>
-          </div>
-          <p className="font-poppins text-4xl text-white uppercase font-bold">
-            Contact Me
-          </p>
-        </div>
+        <SectionTitle title="Contact" description="Contact Me" />
 
         <div className="mt-4 flex gap-3 px-3 max-md:flex-col">
           <div className="flex flex-1">

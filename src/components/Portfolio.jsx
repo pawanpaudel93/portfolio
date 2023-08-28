@@ -6,6 +6,7 @@ import {
 } from "@/utils/projects";
 import PortfolioModal from "./PortfolioModal";
 import TextSvg from "./TextSvg";
+import SectionTitle from "./SectionTitle";
 
 export default function Portfolio() {
   const [project, setProject] = useState();
@@ -13,10 +14,7 @@ export default function Portfolio() {
     <>
       <section id="portfolio" className="portfolio">
         <div className="container">
-          <div className="section-title">
-            <h2>Portfolio</h2>
-            <p>My Works</p>
-          </div>
+          <SectionTitle title="Portfolio" description="My Works" />
 
           <div className="row">
             <div className="col-lg-12 d-flex justify-content-center">

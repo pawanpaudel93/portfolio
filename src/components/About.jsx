@@ -12,6 +12,7 @@ import {
   SoliditySvg,
   EthersSvg,
 } from "@/assets";
+import SectionTitle from "./SectionTitle";
 
 const skills = [
   { Icon: SoliditySvg, name: "Solidity" },
@@ -33,10 +34,7 @@ export default function About() {
     <section id="about" className="about">
       {/* <!-- ======= About Me ======= --> */}
       <div className="about-me container">
-        <div className="section-title">
-          <h2>About</h2>
-          <p>Learn more about me</p>
-        </div>
+        <SectionTitle title="About" description="Learn more about me" />
 
         <div className="row">
           <div className="col-lg-4" data-aos="fade-right">

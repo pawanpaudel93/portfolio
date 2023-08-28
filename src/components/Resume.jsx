@@ -1,11 +1,10 @@
+import SectionTitle from "./SectionTitle";
+
 export default function Resume() {
   return (
     <section id="resume" className="resume">
       <div className="container">
-        <div className="section-title">
-          <h2>Resume</h2>
-          <p>Check My Resume</p>
-        </div>
+        <SectionTitle title="Resume" description="Check My Resume" />
 
         <div className="row">
           <div className="col-lg-6">

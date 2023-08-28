@@ -10,3 +10,7 @@ export { ReactComponent as SeleniumSvg } from "./selenium.svg";
 export { ReactComponent as SoliditySvg } from "./solidity.svg";
 export { ReactComponent as PythonSvg } from "./python.svg";
 export { ReactComponent as ScrapySvg } from "./scrapy.svg";
+export { ReactComponent as LinkedinSvg } from "./linkedin.svg";
+export { ReactComponent as GithubSvg } from "./github.svg";
+export { ReactComponent as TwitterSvg } from "./twitter.svg";
+export { ReactComponent as EmailSvg } from "./email.svg";

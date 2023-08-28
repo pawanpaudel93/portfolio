@@ -1,5 +1,14 @@
 export const hackathonProjects = [
   {
+    title: "Buy Me a Storage",
+    description:
+      "BuyMeAStorage is a user-friendly platform designed to empower content creators built on top of Arweave.",
+    image:
+      "https://raw.githubusercontent.com/pawanpaudel93/BuyMeAStorage/main/public/icon.svg",
+    github: "https://github.com/pawanpaudel93/BuyMeAStorage",
+    url: "https://devpost.com/software/buy-me-a-storage",
+  },
+  {
     title: "Scrapy IPFS Filecoin",
     description:
       "A Python package that provides scrapy pipelines and feed exports to store items to IPFS & Filecoin using Web3Storage, LightHouse, Estuary, Pinata and Moralis.",

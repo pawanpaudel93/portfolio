@@ -1,3 +1,33 @@
+import { EthersSvg } from "@/assets";
+import {
+  DjangoSvg,
+  FlaskSvg,
+  HardhatSvg,
+  NextSvg,
+  NodeSvg,
+  NuxtSvg,
+  PostgresqlSvg,
+  PythonSvg,
+  ScrapySvg,
+  SeleniumSvg,
+  SoliditySvg,
+} from "../assets";
+
+const skills = [
+  { Icon: SoliditySvg, name: "Solidity" },
+  { Icon: HardhatSvg, name: "Hardhat" },
+  { Icon: EthersSvg, name: "Ethers.js" },
+  { Icon: PythonSvg, name: "Python" },
+  { Icon: NodeSvg, name: "NodeJS" },
+  { Icon: DjangoSvg, name: "Django Rest Framework" },
+  { Icon: FlaskSvg, name: "Flask" },
+  { Icon: NextSvg, name: "NextJS" },
+  { Icon: NuxtSvg, name: "NuxtJS" },
+  { Icon: PostgresqlSvg, name: "PostgreSQL" },
+  { Icon: SeleniumSvg, name: "Selenium" },
+  { Icon: ScrapySvg, name: "Scrapy" },
+];
+
 export default function About() {
   return (
     <section id="about" className="about">
@@ -63,104 +93,17 @@ export default function About() {
         </div>
 
         <div className="row">
-          <div className="col-lg-3 col-md-4">
-            <div className="icon-box">
-              <i className="ri-store-line" style={{ color: "#ffbb2c" }}></i>
-              <h3>Solidity</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div className="icon-box">
-              <i
-                className="ri-bar-chart-box-line"
-                style={{ color: "#5578ff" }}
-              ></i>
-              <h3>Hardhat</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div className="icon-box">
-              <i
-                className="ri-calendar-todo-line"
-                style={{ color: "#e80368" }}
-              ></i>
-              <h3>Ethers.js</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div className="icon-box">
-              <i
-                className="ri-paint-brush-line"
-                style={{ color: "#e361ff" }}
-              ></i>
-              <h3>Python</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4">
-            <div className="icon-box">
-              <i
-                className="ri-database-2-line"
-                style={{ color: "#47aeff" }}
-              ></i>
-              <h3>NodeJS</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4">
-            <div className="icon-box">
-              <i
-                className="ri-gradienter-line"
-                style={{ color: "#ffa76e" }}
-              ></i>
-              <h3>Django Rest Framework</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4">
-            <div className="icon-box">
-              <i
-                className="ri-file-list-3-line"
-                style={{ color: "#11dbcf" }}
-              ></i>
-              <h3>Flask</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4">
-            <div className="icon-box">
-              <i
-                className="ri-price-tag-2-line"
-                style={{ color: "#4233ff" }}
-              ></i>
-              <h3>NextJS</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4">
-            <div className="icon-box">
-              <i className="ri-anchor-line" style={{ color: "#b2904f" }}></i>
-              <h3>NuxtJS</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4">
-            <div className="icon-box">
-              <i className="ri-disc-line" style={{ color: "#b20969" }}></i>
-              <h3>PostgreSQL</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4">
-            <div className="icon-box">
-              <i
-                className="ri-base-station-line"
-                style={{ color: "#ff5828" }}
-              ></i>
-              <h3>Selenium</h3>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 mt-4">
-            <div className="icon-box">
-              <i
-                className="ri-fingerprint-line"
-                style={{ color: "#29cc61" }}
-              ></i>
-              <h3>Scrapy</h3>
-            </div>
+          <div className="row">
+            {skills.map((skill, index) => (
+              <div className="col-lg-3 col-md-4 mt-4" key={index}>
+                <div className="icon-box">
+                  <i>
+                    <skill.Icon style={{ height: "40px", width: "40px" }} />
+                  </i>
+                  <h3>{skill.name}</h3>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

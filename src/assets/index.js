@@ -1,0 +1,12 @@
+export { ReactComponent as EthersSvg } from "./ethers.svg";
+export { ReactComponent as DjangoSvg } from "./django.svg";
+export { ReactComponent as FlaskSvg } from "./flask.svg";
+export { ReactComponent as HardhatSvg } from "./hardhat.svg";
+export { ReactComponent as NextSvg } from "./nextjs.svg";
+export { ReactComponent as NodeSvg } from "./nodejs.svg";
+export { ReactComponent as NuxtSvg } from "./nuxtjs.svg";
+export { ReactComponent as PostgresqlSvg } from "./postgresql.svg";
+export { ReactComponent as SeleniumSvg } from "./selenium.svg";
+export { ReactComponent as SoliditySvg } from "./solidity.svg";
+export { ReactComponent as PythonSvg } from "./python.svg";
+export { ReactComponent as ScrapySvg } from "./scrapy.svg";

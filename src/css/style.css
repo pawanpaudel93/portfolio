@@ -103,12 +103,12 @@ h6 {
   margin: 0;
 }
 
-#header .social-links {
+.social-links {
   margin-top: 40px;
   display: flex;
 }
 
-#header .social-links a {
+.social-links a {
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -123,7 +123,7 @@ h6 {
   cursor: pointer;
 }
 
-#header .social-links a:hover {
+.social-links a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -137,7 +137,7 @@ h6 {
     line-height: 30px;
   }
 
-  #header .social-links {
+  .social-links {
     margin-top: 15px;
   }
 

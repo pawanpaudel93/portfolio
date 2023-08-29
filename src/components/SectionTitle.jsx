@@ -3,7 +3,7 @@ const SectionTitle = ({ title, description }) => {
     <div className="flex flex-col">
       <div className="flex gap-3 items-center font-[500] text-[14px] tracking-[1px] uppercase">
         <h2>{title}</h2>
-        <div className="w-[120px] h-[1px] bg-primary"></div>
+        <div className="w-[120px] h-[2px] bg-primary"></div>
       </div>
       {description && (
         <p className="font-poppins text-4xl text-white uppercase font-bold">

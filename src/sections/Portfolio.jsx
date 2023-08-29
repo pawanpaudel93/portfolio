@@ -4,7 +4,7 @@ import {
   web3Projects,
   web2Projects,
 } from "@/utils/projects";
-import { SectionTitle, TextSvg, PortfolioModal } from "@/components";
+import { SectionTitle, TextBox, PortfolioModal } from "@/components";
 
 const Tabs = ["All", "Web3", "Hackathons", "Web2"];
 
@@ -59,7 +59,7 @@ export default function Portfolio() {
                       alt={project.title}
                     />
                   ) : (
-                    <TextSvg title={project.title} />
+                    <TextBox title={project.title} />
                   )}
 
                   <div className="hidden group-hover:block">

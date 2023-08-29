@@ -18,10 +18,7 @@ const navigationLinks = [
 ];
 
 const socialLinks = [
-  {
-    onClick: openGithub,
-    icon: <GithubSvg className="h-5 w-max" />,
-  },
+  { onClick: openGithub, icon: <GithubSvg className="h-5 w-max" /> },
   { onClick: openTwitter, icon: <TwitterSvg className="h-5 w-max" /> },
   { onClick: openLinkedin, icon: <LinkedinSvg className="h-5 w-max" /> },
   { onClick: sendEmail, icon: <EmailSvg className="h-5 w-max" /> },
@@ -41,14 +38,17 @@ export default function Header() {
   }
 
   return (
-    <header id="header">
-      <div className="container">
-        <h1 className="text-5xl font-bold font-poppins">
+    <header
+      className="relative transition ease-in-out duration-300 h-screen flex items-center z-[997] overflow-auto"
+      id="header"
+    >
+      <div className="container max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center">
+        <h1 className="text-5xl font-bold font-poppins max-[992px]:text-[36px]">
           <a className="text-white" href="/">
             Pawan Paudel
           </a>
         </h1>
-        <h2 className="text-xl mt-4 text-slate-300">
+        <h2 className="text-xl mt-4 text-slate-300 max-[992px]:text-[20px] max-[992px]:leading-[30px] max-[992px]:text-center">
           I'm a passionate{" "}
           <span className="underline underline-offset-8 decoration-3 decoration-[#18d26e]">
             backend developer
@@ -57,11 +57,11 @@ export default function Header() {
         </h2>
 
         <nav id="navbar" className={`${openMenu ? "navbar-mobile" : ""}`}>
-          <ul className="flex gap-8 mt-8 max-lg:hidden">
+          <ul className="flex items-center gap-8 mt-8 max-lg:hidden">
             {navigationLinks.map((link, index) => (
               <li key={index}>
                 <a
-                  className={`text-slate-300 nav-link hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#18d26e] ${
+                  className={`nav-link text-slate-300 nav-link hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#18d26e] ${
                     getHash() === link.target ? "active" : ""
                   }`}
                   href={link.target}
@@ -73,7 +73,7 @@ export default function Header() {
             ))}
           </ul>
           <i
-            className={`bi mobile-nav-toggle`}
+            className="text-white text-4xl cursor-pointer hidden max-lg:visible transition duration-500 fixed right-[15px] top-[15px] max-[991px]:block"
             onClick={() => setOpenMenu(!openMenu)}
           >
             {openMenu ? (

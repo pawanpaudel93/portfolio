@@ -1,6 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import TextSvg from "./TextSvg";
+import TextBox from "./TextBox";
 import { CloseSvg } from "@/assets";
 
 export default function PortfolioModal({ project, setProject }) {
@@ -45,17 +45,17 @@ export default function PortfolioModal({ project, setProject }) {
                     onClick={() => setProject(null)}
                   />
                 </Dialog.Title>
-                <Dialog.Description>
+                <Dialog.Description as="div">
                   <div className="flex max-lg:flex-col gap-3">
                     <div className="flex items-center justify-center">
                       {project.image ? (
                         <img
-                          className="h-[300px] w-auto rounded-md"
+                          className="h-[300px] w-[300px] rounded-md"
                           src={project.image}
                           alt={`${project.title} image`}
                         />
                       ) : (
-                        <TextSvg title={project.title} />
+                        <TextBox title={project.title} />
                       )}
                     </div>
 

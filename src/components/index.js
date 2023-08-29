@@ -1,5 +1,5 @@
 import PortfolioModal from "./PortfolioModal";
 import SectionTitle from "./SectionTitle";
-import TextSvg from "./TextSvg";
+import TextBox from "./TextBox";
 
-export { PortfolioModal, SectionTitle, TextSvg };
+export { PortfolioModal, SectionTitle, TextBox };

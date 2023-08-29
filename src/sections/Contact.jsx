@@ -3,18 +3,9 @@ import { openGithub, openTwitter, openLinkedin, sendEmail } from "@/utils";
 import { SectionTitle } from "@/components";
 
 const socialLinks = [
-  {
-    onClick: openGithub,
-    icon: <GithubSvg className="h-5 w-max" />,
-  },
-  {
-    onClick: openTwitter,
-    icon: <TwitterSvg className="h-5 w-max" />,
-  },
-  {
-    onClick: openLinkedin,
-    icon: <LinkedinSvg className="h-5 w-max" />,
-  },
+  { onClick: openGithub, icon: <GithubSvg className="h-5 w-max" /> },
+  { onClick: openTwitter, icon: <TwitterSvg className="h-5 w-max" /> },
+  { onClick: openLinkedin, icon: <LinkedinSvg className="h-5 w-max" /> },
 ];
 
 export default function Contact() {
@@ -50,7 +41,7 @@ export default function Contact() {
           <div className="flex flex-1">
             <div className="flex items-center gap-3 text-[#444444] p-5 bg-[#ffffff14] w-[100%]">
               <EmailSvg className="h-8 w-max" />
-              <h3 className="font-bold text-xl text-slate-400 my-[8px] ml-[68px] p-0 m-0">
+              <h3 className="font-bold text-xl text-slate-400 my-[8px] ml-1 p-0 m-0">
                 <a
                   href=""
                   onClick={sendEmail}

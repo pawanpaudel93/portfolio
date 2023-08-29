@@ -5,15 +5,15 @@ import { SectionTitle } from "@/components";
 const socialLinks = [
   {
     onClick: openGithub,
-    icon: <GithubSvg style={{ height: "20px", width: "max-content" }} />,
+    icon: <GithubSvg className="h-5 w-max" />,
   },
   {
     onClick: openTwitter,
-    icon: <TwitterSvg style={{ height: "20px", width: "max-content" }} />,
+    icon: <TwitterSvg className="h-5 w-max" />,
   },
   {
     onClick: openLinkedin,
-    icon: <LinkedinSvg style={{ height: "20px", width: "max-content" }} />,
+    icon: <LinkedinSvg className="h-5 w-max" />,
   },
 ];
 
@@ -49,11 +49,8 @@ export default function Contact() {
 
           <div className="flex flex-1">
             <div className="flex items-center gap-3 text-[#444444] p-5 bg-[#ffffff14] w-[100%]">
-              <EmailSvg style={{ height: "32px", width: "max-content" }} />
-              <h3
-                className="font-bold text-xl text-slate-400 my-[8px] ml-[68px]"
-                style={{ padding: 0, margin: 0 }}
-              >
+              <EmailSvg className="h-8 w-max" />
+              <h3 className="font-bold text-xl text-slate-400 my-[8px] ml-[68px] p-0 m-0">
                 <a
                   href=""
                   onClick={sendEmail}

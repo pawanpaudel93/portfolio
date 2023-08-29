@@ -33,10 +33,6 @@
     @apply text-white text-4xl cursor-pointer hidden transition duration-500 fixed right-[15px] top-[15px] max-[991px]:block;
   }
 
-  .navbar ul {
-    @apply max-[991px]:hidden;
-  }
-
   .navbar-mobile {
     @apply fixed overflow-hidden top-0 right-0 left-0 bottom-0 bg-black bg-opacity-90 transition duration-300 z-50;
   }
@@ -58,55 +54,7 @@
     @apply text-base relative;
   }
 
-  .navbar {
-    @apply p-0 mt-[35px];
-  }
-
-  .navbar ul {
-    @apply m-0 p-0 flex items-center list-none;
-  }
-
-  .navbar li {
-    @apply relative;
-  }
-
-  .navbar li + li {
-    @apply ml-[30px];
-  }
-
-  .navbar a,
-  .navbar a:focus {
-    @apply flex items-center justify-between p-0 font-poppins text-base font-normal transition duration-300 text-[#ffffffb3] whitespace-nowrap;
-  }
-
-  .navbar a i,
-  .navbar a:focus i {
-    @apply text-[12px] leading-[0] ml-[5px];
-  }
-
-  .navbar a:before {
-    @apply absolute w-0 h-[2px] bottom-[-4px] left-0 bg-[#18d26e] hidden transition-all duration-300 ease-in-out delay-0;
-    content: "";
-  }
-
-  .navbar a:hover:before,
-  .navbar li:hover > a:before,
-  .navbar .active:before {
-    @apply visible w-[25px];
-  }
-
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
-  .navbar li:hover > a {
-    @apply text-[#fff];
-  }
-
   /* header */
-  #header.header-top .social-links,
-  #header.header-top h2 {
-    @apply hidden;
-  }
 
   #header {
     @apply relative transition ease-in-out duration-300 h-screen flex items-center z-[997] overflow-auto;
@@ -133,6 +81,11 @@
   }
 
   /* Header Top */
+  #header.header-top .social-links,
+  #header.header-top h2 {
+    @apply hidden;
+  }
+
   #header.header-top {
     @apply h-[80px] fixed left-0 top-0 right-0 bg-[#000000e6] max-[768px]:h-[60px];
   }

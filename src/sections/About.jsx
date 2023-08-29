@@ -98,7 +98,7 @@ export default function About() {
             <div className="mt-4" key={index}>
               <div className="flex items-center p-3 bg-[#ffffff14] transition gap-2">
                 <i>
-                  <skill.Icon style={{ height: "40px", width: "40px" }} />
+                  <skill.Icon className="h-10 w-10" />
                 </i>
                 <h3>{skill.name}</h3>
               </div>

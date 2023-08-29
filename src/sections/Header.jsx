@@ -18,10 +18,13 @@ const navigationLinks = [
 ];
 
 const socialLinks = [
-  { onClick: openGithub, icon: <GithubSvg style={{ height: "20px" }} /> },
-  { onClick: openTwitter, icon: <TwitterSvg style={{ height: "20px" }} /> },
-  { onClick: openLinkedin, icon: <LinkedinSvg style={{ height: "20px" }} /> },
-  { onClick: sendEmail, icon: <EmailSvg style={{ height: "20px" }} /> },
+  {
+    onClick: openGithub,
+    icon: <GithubSvg className="h-5 w-max" />,
+  },
+  { onClick: openTwitter, icon: <TwitterSvg className="h-5 w-max" /> },
+  { onClick: openLinkedin, icon: <LinkedinSvg className="h-5 w-max" /> },
+  { onClick: sendEmail, icon: <EmailSvg className="h-5 w-max" /> },
 ];
 
 export default function Header() {
@@ -74,9 +77,9 @@ export default function Header() {
             onClick={() => setOpenMenu(!openMenu)}
           >
             {openMenu ? (
-              <CloseSvg style={{ height: "24px", width: "max-content" }} />
+              <CloseSvg className="h-6 w-max" />
             ) : (
-              <HamburgerSvg style={{ height: "24px", width: "max-content" }} />
+              <HamburgerSvg className="h-6 w-max" />
             )}
           </i>
         </nav>

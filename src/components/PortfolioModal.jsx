@@ -34,7 +34,7 @@ export default function PortfolioModal({ project, setProject }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-[#040404] p-6 text-left align-middle shadow-xl transition-all">
+              <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-[#2b2b2b] p-6 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="h3"
                   className="flex justify-between text-lg font-medium leading-6 text-white-900 pb-3"

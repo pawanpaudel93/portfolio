@@ -36,8 +36,8 @@ export default function Portfolio() {
               {Tabs.map((tab, index) => (
                 <li
                   key={index}
-                  className={`cursor-pointer inline-block py-[6px] px-3 text-[14px] font-[600] uppercase bg-[#ffffff1a] mb-[10px] mx-[3px] rounded-md hover:bg-[#18d26e] ${
-                    activeTab === tab ? "bg-[#18d26e]" : ""
+                  className={`cursor-pointer inline-block py-[6px] px-3 text-[14px] font-[600] uppercase mb-[10px] mx-[3px] rounded-md hover:bg-[#18d26e] ${
+                    activeTab === tab ? "bg-[#18d26e]" : "bg-[#ffffff1a]"
                   }`}
                   onClick={() => setActiveTab(tab)}
                 >

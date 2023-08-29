@@ -9,6 +9,9 @@ export default {
       colors: {
         main: "#4ceb95",
       },
+      backgroundImage: {
+        main: "url(/img/bg.jpg)",
+      },
     },
   },
   plugins: [],

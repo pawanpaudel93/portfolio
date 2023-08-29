@@ -3,23 +3,21 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    @apply text-white bg-[#040404] relative bg-transparent before:content-[""] before:fixed before:left-0 before:right-0 before:top-0 before:h-screen before:z-[-1] before:bg-cover before:bg-[#040404] before:bg-right-top before:bg-no-repeat before:bg-main;
+  }
+
   #header.header-top .social-links,
   #header.header-top h2 {
     display: none;
   }
 
   .mobile-nav-toggle {
-    @apply text-white text-4xl cursor-pointer hidden transition duration-500 fixed right-[15px] top-[15px];
+    @apply text-white text-4xl cursor-pointer hidden transition duration-500 fixed right-[15px] top-[15px] max-[991px]:block;
   }
 
-  @media (max-width: 991px) {
-    .mobile-nav-toggle {
-      @apply block;
-    }
-
-    .navbar ul {
-      @apply hidden;
-    }
+  .navbar ul {
+    @apply max-[991px]:hidden;
   }
 
   .navbar-mobile {
@@ -53,7 +51,7 @@
   }
 
   .resume .resume-item {
-    @apply pl-5 pb-5 -mt-[2px] relative border-l-2 border-solid border-[#ffffff33];
+    @apply pl-5 pb-5 -mt-[2px] relative border-l-2 border-solid border-[#ffffff33] before:content-[""] before:absolute before:w-4 before:h-4 before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-[#18d26e] before:border-[2px] before:border-solid before:border-[#18d26e];
   }
 
   .resume .resume-item h4 {
@@ -74,10 +72,5 @@
 
   .resume .resume-item:last-child {
     @apply pb-0;
-  }
-
-  .resume .resume-item::before {
-    content: "";
-    @apply absolute w-4 h-4 rounded-[50px] -left-[9px] top-0 bg-[#18d26e] border-[2px] border-solid border-[#18d26e];
   }
 }

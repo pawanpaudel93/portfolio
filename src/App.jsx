@@ -1,13 +1,6 @@
 import { useEffect } from "react";
 import { loadAllEventListeners } from "@/utils";
-import {
-  About,
-  Header,
-  Resume,
-  Portfolio,
-  Contact,
-  Credit,
-} from "@/components";
+import { About, Header, Resume, Portfolio, Contact } from "@/components";
 
 function App() {
   useEffect(() => {
@@ -21,7 +14,6 @@ function App() {
       <Resume />
       <Portfolio />
       <Contact />
-      <Credit />
     </div>
   );
 }

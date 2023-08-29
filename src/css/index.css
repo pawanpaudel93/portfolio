@@ -7,6 +7,10 @@
     @apply text-white bg-[#040404] relative bg-transparent before:content-[""] before:fixed before:left-0 before:right-0 before:top-0 before:h-screen before:z-[-1] before:bg-cover before:bg-[#040404] before:bg-right-top before:bg-no-repeat before:bg-main;
   }
 
+  .container {
+    @apply mx-auto px-3;
+  }
+
   #header.header-top .social-links,
   #header.header-top h2 {
     display: none;
@@ -29,11 +33,11 @@
   }
 
   .navbar-mobile ul {
-    @apply block absolute top-[28px] right-[15px] bottom-[45px] left-[15px] py-10 overflow-y-auto transition duration-300 border-2 border-white border-opacity-20;
+    @apply block absolute top-[28px] right-[15px] bottom-[45px] left-[15px] py-2 overflow-y-auto transition duration-300 border-2 border-white border-opacity-20;
   }
 
   .navbar-mobile li {
-    @apply py-4 px-5;
+    @apply py-3 px-5;
   }
 
   .navbar-mobile a,

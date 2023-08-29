@@ -12,7 +12,7 @@ import {
   SoliditySvg,
   EthersSvg,
 } from "@/assets";
-import SectionTitle from "./SectionTitle";
+import { SectionTitle } from "@/components";
 
 const skills = [
   { Icon: SoliditySvg, name: "Solidity" },

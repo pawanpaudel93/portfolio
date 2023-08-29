@@ -1,4 +1,4 @@
-import SectionTitle from "./SectionTitle";
+import { SectionTitle } from "@/components";
 
 export default function Resume() {
   return (

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { loadAllEventListeners } from "@/utils";
-import { About, Header, Resume, Portfolio, Contact } from "@/components";
+import { About, Header, Resume, Portfolio, Contact } from "@/sections";
 
 function App() {
   useEffect(() => {

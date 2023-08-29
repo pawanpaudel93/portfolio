@@ -1,8 +1,5 @@
-import Header from "./Header";
-import About from "./About";
-import Resume from "./Resume";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
+import PortfolioModal from "./PortfolioModal";
 import SectionTitle from "./SectionTitle";
+import TextSvg from "./TextSvg";
 
-export { Header, About, Resume, Portfolio, Contact, SectionTitle };
+export { PortfolioModal, SectionTitle, TextSvg };

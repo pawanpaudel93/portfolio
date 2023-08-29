@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { openGithub, openTwitter, openLinkedin, sendEmail } from "@/utils";
 import {
   EmailSvg,

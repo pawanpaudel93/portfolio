@@ -4,9 +4,7 @@ import {
   web3Projects,
   web2Projects,
 } from "@/utils/projects";
-import PortfolioModal from "./PortfolioModal";
-import TextSvg from "./TextSvg";
-import SectionTitle from "./SectionTitle";
+import { SectionTitle, TextSvg, PortfolioModal } from "@/components";
 
 const Tabs = ["All", "Web3", "Hackathons", "Web2"];
 

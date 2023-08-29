@@ -1,6 +1,6 @@
 import { GithubSvg, LinkedinSvg, TwitterSvg, EmailSvg } from "@/assets";
 import { openGithub, openTwitter, openLinkedin, sendEmail } from "@/utils";
-import SectionTitle from "./SectionTitle";
+import { SectionTitle } from "@/components";
 
 const socialLinks = [
   {

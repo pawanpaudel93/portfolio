@@ -40,8 +40,10 @@ export default function Header() {
   return (
     <header id="header">
       <div className="container">
-        <h1 className="text-white text-5xl font-bold font-poppins">
-          <a href="/">Pawan Paudel</a>
+        <h1 className="text-5xl font-bold font-poppins">
+          <a className="text-white" href="/">
+            Pawan Paudel
+          </a>
         </h1>
         <h2 className="text-xl mt-4 text-slate-300">
           I'm a passionate{" "}
@@ -52,11 +54,11 @@ export default function Header() {
         </h2>
 
         <nav id="navbar" className={`${openMenu ? "navbar-mobile" : ""}`}>
-          <ul className="flex gap-8 mt-8 text-slate-300 max-lg:hidden">
+          <ul className="flex gap-8 mt-8 max-lg:hidden">
             {navigationLinks.map((link, index) => (
               <li key={index}>
                 <a
-                  className={`nav-link hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#18d26e] ${
+                  className={`text-slate-300 nav-link hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#18d26e] ${
                     getHash() === link.target ? "active" : ""
                   }`}
                   href={link.target}

@@ -54,7 +54,11 @@ export default function Contact() {
                 className="font-bold text-xl text-slate-400 my-[8px] ml-[68px]"
                 style={{ padding: 0, margin: 0 }}
               >
-                <a href="" onClick={sendEmail} className="hover:text-[#18d26e]">
+                <a
+                  href=""
+                  onClick={sendEmail}
+                  className="text-slate-300 hover:text-[#18d26e]"
+                >
                   Email Me
                 </a>
               </h3>

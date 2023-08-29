@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply text-white bg-[#040404] relative bg-transparent before:content-[""] before:fixed before:left-0 before:right-0 before:top-0 before:h-screen before:z-[-1] before:bg-cover before:bg-[#040404] before:bg-right-top before:bg-no-repeat before:bg-main before:min-[1024px]:bg-fixed;
+  }
+
+  a {
+    @apply text-[#35e888] hover:text-[#35e888];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-raleway;
+  }
+
+  .container {
+    @apply mx-auto px-3;
+  }
+
+  .active {
+    @apply underline underline-offset-8 decoration-2 decoration-[#18d26e];
+  }
+
+  /* navbar */
+  .mobile-nav-toggle {
+    @apply text-white text-4xl cursor-pointer hidden transition duration-500 fixed right-[15px] top-[15px] max-[991px]:block;
+  }
+
+  .navbar ul {
+    @apply max-[991px]:hidden;
+  }
+
+  .navbar-mobile {
+    @apply fixed overflow-hidden top-0 right-0 left-0 bottom-0 bg-black bg-opacity-90 transition duration-300 z-50;
+  }
+
+  .navbar-mobile .mobile-nav-toggle {
+    @apply absolute top-[15px] right-[15px];
+  }
+
+  .navbar-mobile ul {
+    @apply block absolute top-[28px] right-[15px] bottom-[45px] left-[15px] py-2 overflow-y-auto transition duration-300 border-2 border-white border-opacity-20;
+  }
+
+  .navbar-mobile li {
+    @apply py-3 px-5;
+  }
+
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    @apply text-base relative;
+  }
+
+  .navbar {
+    @apply p-0 mt-[35px];
+  }
+
+  .navbar ul {
+    @apply m-0 p-0 flex items-center list-none;
+  }
+
+  .navbar li {
+    @apply relative;
+  }
+
+  .navbar li + li {
+    @apply ml-[30px];
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    @apply flex items-center justify-between p-0 font-poppins text-base font-normal transition duration-300 text-[#ffffffb3] whitespace-nowrap;
+  }
+
+  .navbar a i,
+  .navbar a:focus i {
+    @apply text-[12px] leading-[0] ml-[5px];
+  }
+
+  .navbar a:before {
+    @apply absolute w-0 h-[2px] bottom-[-4px] left-0 bg-[#18d26e] hidden transition-all duration-300 ease-in-out delay-0;
+    content: "";
+  }
+
+  .navbar a:hover:before,
+  .navbar li:hover > a:before,
+  .navbar .active:before {
+    @apply visible w-[25px];
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover > a {
+    @apply text-[#fff];
+  }
+
+  /* header */
+  #header.header-top .social-links,
+  #header.header-top h2 {
+    @apply hidden;
+  }
+
+  #header {
+    @apply relative transition ease-in-out duration-300 h-screen flex items-center z-[997] overflow-auto;
+  }
+
+  #header h1 {
+    @apply max-[992px]:text-[36px];
+  }
+
+  #header h2 {
+    @apply max-[992px]:text-[20px] max-[992px]:leading-[30px] max-[992px]:text-center;
+  }
+
+  #header .container {
+    @apply max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center;
+  }
+
+  #header * {
+    @apply transition ease-in-out duration-300;
+  }
+
+  #header img {
+    @apply p-0 m-0;
+  }
+
+  /* Header Top */
+  #header.header-top {
+    @apply h-[80px] fixed left-0 top-0 right-0 bg-[#000000e6] max-[768px]:h-[60px];
+  }
+
+  #header.header-top h1 {
+    @apply mr-auto text-4xl max-[768px]:h-[26px];
+  }
+
+  #header.header-top .container {
+    @apply flex items-center;
+  }
+
+  #header.header-top .navbar {
+    @apply m-0;
+  }
+
+  /* resume */
+  .resume .resume-title {
+    @apply text-[26px] font-bold my-5 text-white;
+  }
+
+  .resume .resume-item {
+    @apply pl-5 pb-5 -mt-[2px] relative border-l-2 border-solid border-[#ffffff33] before:content-[""] before:absolute before:w-4 before:h-4 before:rounded-[50px] before:-left-[9px] before:top-0 before:bg-[#18d26e] before:border-[2px] before:border-solid before:border-[#18d26e];
+  }
+
+  .resume .resume-item h4 {
+    @apply leading-[18px] text-[18px] font-[600] uppercase font-poppins text-[#18d26e] mb-[10px];
+  }
+
+  .resume .resume-item h5 {
+    @apply text-base bg-[#ffffff26] py-[5px] px-[15px] inline-block font-[600] mb-[10px];
+  }
+
+  .resume .resume-item ul {
+    @apply pl-5;
+  }
+
+  .resume .resume-item ul li {
+    @apply pb-[10px];
+  }
+
+  .resume .resume-item:last-child {
+    @apply pb-0;
+  }
+
+  /* section */
+  section {
+    @apply overflow-hidden absolute w-full top-[140px] bottom-[100%] opacity-0 transition ease-in-out duration-[0.4s] z-[2] max-[768px]:top-[120px];
+  }
+
+  section.section-show {
+    @apply top-[100px] bottom-auto opacity-[1] pb-[45px] max-[768px]:top-[80px];
+  }
+
+  section .container {
+    @apply bg-[#000000e6] p-[30px];
+  }
+}

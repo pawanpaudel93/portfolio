@@ -5,9 +5,10 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
       colors: {
-        main: "#4ceb95",
+        primary: "#4ceb95",
       },
       backgroundImage: {
         main: "url(/img/bg.jpg)",

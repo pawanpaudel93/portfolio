@@ -30,6 +30,7 @@ const skills = [
 ];
 
 export default function About() {
+  console.log("dadad");
   return (
     <section id="about" className="about">
       {/* <!-- ======= About Me ======= --> */}

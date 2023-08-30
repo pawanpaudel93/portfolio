@@ -45,28 +45,6 @@
     @apply text-base relative;
   }
 
-  /* Header Top */
-  #header.header-top .social-links,
-  #header.header-top h2 {
-    @apply hidden;
-  }
-
-  #header.header-top {
-    @apply h-[80px] fixed left-0 top-0 right-0 bg-[#000000e6] max-[768px]:h-[60px];
-  }
-
-  #header.header-top h1 {
-    @apply mr-auto text-4xl max-[768px]:h-[26px];
-  }
-
-  #header.header-top .container {
-    @apply flex items-center;
-  }
-
-  #header.header-top .navbar {
-    @apply m-0;
-  }
-
   /* resume */
   .resume .resume-title {
     @apply text-[26px] font-bold my-5 text-white;
@@ -98,11 +76,7 @@
 
   /* section */
   section {
-    @apply overflow-hidden absolute w-full top-[140px] bottom-[100%] opacity-0 transition ease-in-out duration-[0.4s] z-[2] max-[768px]:top-[120px];
-  }
-
-  section.section-show {
-    @apply top-[100px] bottom-auto opacity-[1] pb-[45px] max-[768px]:top-[80px];
+    @apply overflow-hidden w-full transition ease-in-out duration-[0.4s] z-[2] mt-8;
   }
 
   section .container {

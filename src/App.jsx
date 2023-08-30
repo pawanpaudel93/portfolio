@@ -1,20 +1,18 @@
-import { useEffect } from "react";
-import { loadAllEventListeners } from "@/utils";
-import { About, Header, Resume, Portfolio, Contact } from "@/sections";
+import { About, Home, Resume, Portfolio, Contact, NavBar } from "@/sections";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  useEffect(() => {
-    loadAllEventListeners();
-  }, []);
-
   return (
-    <div>
-      <Header />
-      <About />
-      <Resume />
-      <Portfolio />
-      <Contact />
-    </div>
+    <HashRouter basename="/">
+      <NavBar />
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/about" Component={About} />
+        <Route path="/resume" Component={Resume} />
+        <Route path="/portfolio" Component={Portfolio} />
+        <Route path="/contact" Component={Contact} />
+      </Routes>
+    </HashRouter>
   );
 }
 

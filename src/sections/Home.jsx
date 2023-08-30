@@ -8,13 +8,14 @@ import {
   HamburgerSvg,
   CloseSvg,
 } from "@/assets";
+import { NavLink, useLocation } from "react-router-dom";
 
 const navigationLinks = [
-  { text: "Home", target: "#header" },
-  { text: "About", target: "#about" },
-  { text: "Resume", target: "#resume" },
-  { text: "Portfolio", target: "#portfolio" },
-  { text: "Contact", target: "#contact" },
+  { text: "Home", target: "/" },
+  { text: "About", target: "/about" },
+  { text: "Resume", target: "/resume" },
+  { text: "Portfolio", target: "/portfolio" },
+  { text: "Contact", target: "/contact" },
 ];
 
 const socialLinks = [
@@ -26,10 +27,7 @@ const socialLinks = [
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
-
-  function getHash() {
-    return window ? window.location.hash : "#header";
-  }
+  const location = useLocation();
 
   function onClick() {
     if (openMenu) {
@@ -38,10 +36,7 @@ export default function Header() {
   }
 
   return (
-    <header
-      className="relative transition ease-in-out duration-300 h-screen flex items-center z-[997] overflow-auto"
-      id="header"
-    >
+    <div className="relative transition ease-in-out duration-300 h-screen flex items-center z-[997] overflow-auto">
       <div className="container max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center">
         <h1 className="text-5xl font-bold font-poppins max-[992px]:text-[36px]">
           <a className="text-white" href="/">
@@ -56,19 +51,19 @@ export default function Header() {
           from Nepal
         </h2>
 
-        <nav id="navbar" className={`${openMenu ? "navbar-mobile" : ""}`}>
+        <div className={`${openMenu ? "navbar-mobile" : ""}`}>
           <ul className="flex items-center gap-8 mt-8 max-lg:hidden">
             {navigationLinks.map((link, index) => (
               <li key={index}>
-                <a
+                <NavLink
                   className={`nav-link text-slate-300 nav-link hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#18d26e] ${
-                    getHash() === link.target ? "active" : ""
+                    location.pathname === link.target ? "active" : ""
                   }`}
-                  href={link.target}
+                  to={link.target}
                   onClick={onClick}
                 >
                   {link.text}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -82,7 +77,7 @@ export default function Header() {
               <HamburgerSvg className="h-6 w-max" />
             )}
           </i>
-        </nav>
+        </div>
 
         <div className="social-links flex gap-3 mt-10">
           {socialLinks.map((link, index) => (
@@ -96,6 +91,6 @@ export default function Header() {
           ))}
         </div>
       </div>
-    </header>
+    </div>
   );
 }

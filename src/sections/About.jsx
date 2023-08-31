@@ -30,7 +30,6 @@ const skills = [
 ];
 
 export default function About() {
-  console.log("dadad");
   return (
     <section id="about" className="about">
       {/* <!-- ======= About Me ======= --> */}
@@ -44,41 +43,35 @@ export default function About() {
             <h3 className="font-bold text-[#18d26e] text-[26px] tracking-wide">
               Freelance Software Developer
             </h3>
-            <p className="italic">
+            <p className="italic mt-3 leading-relaxed">
               Hi, I am Pawan, a passionate, enthusiast, focused and self taught
               developer with over 3 years of freelance experience working with
               different web2 technologies and over 1 year of experience playing
               around with different web3 technologies.
             </p>
-            <div className="flex my-3 gap-3 justify-evenly flex-wrap">
-              <div>
-                <ul>
-                  <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Website:</strong>{" "}
-                    <span>
-                      <a
-                        href="https://pawanpaudel.com.np"
-                        className="text-[#18d26e]"
-                        target="_blank"
-                      >
-                        https://pawanpaudel.com.np
-                      </a>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Degree:</strong>{" "}
-                    <span>Bachelors in Computer Engineering</span>
-                  </li>
-                </ul>
-              </div>
+            <div className="my-4">
+              <ul className="flex my-4 gap-x-12 flex-wrap">
+                <li className="flex items-center gap-2">
+                  <i className="text-[#18d26e] text-3xl">{">"}</i>{" "}
+                  <strong>Website:</strong>{" "}
+                  <span>
+                    <a
+                      href="https://pawanpaudel.com.np"
+                      className="text-[#18d26e]"
+                      target="_blank"
+                    >
+                      https://pawanpaudel.com.np
+                    </a>
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <i className="text-[#18d26e] text-3xl">{">"}</i>{" "}
+                  <strong>Degree:</strong>{" "}
+                  <span>Bachelors in Computer Engineering</span>
+                </li>
+              </ul>
             </div>
-            <p className="mt-4">
+            <p className="mt-4 leading-relaxed">
               I am working on the different web2 projects as a freelance
               developer and on the same time I am also involved in learning and
               developing projects in web3. I have participated in 6 web3
@@ -94,13 +87,11 @@ export default function About() {
       <div className="container">
         <SectionTitle title="Skills" />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-3">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-5 mt-4">
           {skills.map((skill, index) => (
-            <div className="mt-4" key={index}>
-              <div className="flex items-center p-3 bg-[#ffffff14] transition gap-2">
-                <i>
-                  <skill.Icon className="h-10 w-10" />
-                </i>
+            <div key={index}>
+              <div className="flex items-center p-3 bg-[#ffffff14] transition gap-3">
+                <skill.Icon className="h-10 w-10" />
                 <h3>{skill.name}</h3>
               </div>
             </div>

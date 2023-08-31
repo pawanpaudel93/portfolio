@@ -76,7 +76,7 @@
 
   /* section */
   section {
-    @apply overflow-hidden w-full transition ease-in-out duration-[0.4s] z-[2] mt-8;
+    @apply overflow-hidden w-full transition ease-in-out duration-[0.4s] z-[2] mt-10;
   }
 
   section .container {

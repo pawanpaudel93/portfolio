@@ -23,8 +23,8 @@ export default function NavBar() {
   if (location.pathname === "/") return;
 
   return (
-    <header className="container transition ease-in-out duration-300 flex items-center overflow-auto py-4">
-      <div className="container flex justify-between items-center fixed top-0 py-4 bg-[#040404] z-[997]">
+    <header className="transition ease-in-out duration-300 flex items-center overflow-auto py-4 justify-center">
+      <div className="container flex justify-between items-center fixed top-0 py-4 z-[997] bg-[#040404]">
         <h1 className="text-5xl font-bold font-poppins max-[992px]:text-[36px]">
           <a className="text-white" href="/">
             Pawan Paudel

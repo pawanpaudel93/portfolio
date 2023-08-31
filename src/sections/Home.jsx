@@ -46,7 +46,7 @@ export default function Header() {
         <h2 className="text-xl mt-4 text-slate-300 max-lg:text-white max-[992px]:text-[20px] max-[992px]:leading-[30px] max-[992px]:text-center">
           I'm a passionate{" "}
           <span className="underline underline-offset-8 decoration-3 decoration-[#18d26e]">
-            backend developer
+            blockend developer
           </span>{" "}
           from Nepal
         </h2>

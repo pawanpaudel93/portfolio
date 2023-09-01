@@ -47,24 +47,45 @@ export default function Resume() {
               <ul>
                 <li>
                   Developed a web app called{" "}
-                  <a href="https://ella.social">ella.social</a> that permanently
-                  backs up Instagram photos to{" "}
-                  <a href="https://arweave.org/">Arweave</a>.
+                  <a href="https://ella.social" target="_blank">
+                    ella.social
+                  </a>{" "}
+                  that permanently backs up Instagram photos to{" "}
+                  <a href="https://arweave.org/" target="_blank">
+                    Arweave
+                  </a>
+                  .
                 </li>
                 <li>
                   Created a web app called{" "}
-                  <a href="https://dragondeploy.xyz/">dragondeploy</a> with{" "}
-                  <a href="https://ar.io/arns/">ArNS</a> support, allowing users
-                  to deploy web apps to{" "}
-                  <a href="https://arweave.org/">Arweave</a>. Also wrote Python
-                  code to display deployment statistics using GitHub Actions.
+                  <a href="https://dragondeploy.xyz/" target="_blank">
+                    dragondeploy
+                  </a>{" "}
+                  with{" "}
+                  <a href="https://ar.io/arns/" target="_blank">
+                    ArNS
+                  </a>{" "}
+                  support, allowing users to deploy web apps to{" "}
+                  <a href="https://arweave.org/" target="_blank">
+                    Arweave
+                  </a>
+                  . Also wrote Python code to display deployment statistics
+                  using GitHub Actions.
                 </li>
                 <li>
                   Developed a web app called{" "}
-                  <a href="https://mediamoat.vercel.app/">Media Moat</a> that
-                  uploads photos permanently to{" "}
-                  <a href="https://arweave.org/">Arweave</a> using{" "}
-                  <a href="https://othent.io/">Othent</a>.
+                  <a href="https://mediamoat.vercel.app/" target="_blank">
+                    Media Moat
+                  </a>{" "}
+                  that uploads photos permanently to{" "}
+                  <a href="https://arweave.org/" target="_blank">
+                    Arweave
+                  </a>{" "}
+                  using{" "}
+                  <a href="https://othent.io/" target="_blank">
+                    Othent
+                  </a>
+                  .
                 </li>
               </ul>
             </div>
@@ -83,7 +104,10 @@ export default function Resume() {
                   different servers running Selenium automation code.
                 </li>
                 <li>
-                  Created <a href="https://heliumcontrol.com/">HeliumControl</a>
+                  Created{" "}
+                  <a href="https://heliumcontrol.com/" target="_blank">
+                    HeliumControl
+                  </a>
                   , a project using Django Rest Framework (DRF) and VueJS, to
                   manage and visualize statistics of different Helium hotspots.
                 </li>

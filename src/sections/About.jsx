@@ -55,11 +55,7 @@ export default function About() {
                   <i className="text-[#18d26e] text-3xl">{">"}</i>{" "}
                   <strong>Website:</strong>{" "}
                   <span>
-                    <a
-                      href="https://pawanpaudel.com.np"
-                      className="text-[#18d26e]"
-                      target="_blank"
-                    >
+                    <a href="https://pawanpaudel.com.np" target="_blank">
                       https://pawanpaudel.com.np
                     </a>
                   </span>

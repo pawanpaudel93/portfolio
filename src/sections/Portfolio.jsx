@@ -65,19 +65,15 @@ export default function Portfolio() {
                   <div className="hidden group-hover:block">
                     <div className="absolute top-0 left-0 h-full w-full bg-black opacity-80"></div>
                     <div className="absolute top-0 left-0 h-full w-full flex flex-col gap-1 items-center justify-center text-center px-3 z-20">
-                      <h4 className="text-xl font-[500] font-poppins">
+                      <h4 className="text-xl font-[500] font-poppins text-primary">
                         {project.title}
                       </h4>
                       <p className="text-slate-300">{project.description}</p>
                       <div className="mt-[5px]">
                         <button
                           type="button"
-                          data-modal-target="defaultModal"
-                          data-modal-toggle="defaultModal"
-                          className="py-2 px-3 bg-[#18d26e] rounded-md hover:opacity-90"
-                          onClick={() => {
-                            setProject(project);
-                          }}
+                          className="py-1 px-4 bg-[#18d26e] rounded-md hover:opacity-90"
+                          onClick={() => setProject(project)}
                         >
                           Detail
                         </button>

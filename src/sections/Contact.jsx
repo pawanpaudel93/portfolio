@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="container p-[30px] bg-[#000000e6]">
         <SectionTitle title="Contact" description="Contact Me" />
 
-        <div className="mt-4 flex gap-3 px-3 max-md:flex-col">
+        <div className="mt-4 flex gap-6 px-3 max-md:flex-col">
           <div className="flex flex-1">
             <div className="text-[#444444] p-4 bg-[#ffffff14] w-[100%]">
               <img

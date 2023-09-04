@@ -6,7 +6,7 @@ import {
 } from "@/utils/projects";
 import { SectionTitle, TextBox, PortfolioModal } from "@/components";
 
-const Tabs = ["All", "Web3", "Hackathons", "Web2"];
+const Tabs = ["All", "Hackathons", "Web3", "Web2"];
 
 export default function Portfolio() {
   const [project, setProject] = useState(null);

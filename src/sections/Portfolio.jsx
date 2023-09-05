@@ -64,7 +64,7 @@ export default function Portfolio() {
 
                   <div className="hidden group-hover:block">
                     <div className="absolute top-0 left-0 h-full w-full bg-black opacity-80"></div>
-                    <div className="absolute top-0 left-0 h-full w-full flex flex-col gap-1 items-center justify-center text-center px-3 z-20">
+                    <div className="absolute top-0 left-0 h-full w-full flex flex-col gap-1 items-center justify-center text-center px-3 z-20 animate-slideUpEnter">
                       <h4 className="text-xl font-[500] font-poppins text-primary">
                         {project.title}
                       </h4>

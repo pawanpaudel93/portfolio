@@ -142,6 +142,12 @@ export const web3Projects = [
     image: "",
     github: "https://github.com/pawanpaudel93/playing-ethernaut",
   },
+  {
+    title: "Arweave NextAuth",
+    description: "Example project for using ArConnect with NextAuth.",
+    image: "",
+    github: "https://github.com/pawanpaudel93/arconnect-nextauth",
+  },
 ];
 
 export const web2Projects = [
@@ -210,5 +216,12 @@ export const web2Projects = [
     image:
       "https://raw.githubusercontent.com/pawanpaudel93/longify-tiktok/main/src/assets/logo.png",
     github: "https://github.com/pawanpaudel93/longify-tiktok",
+  },
+  {
+    title: "Chakra Country Selector",
+    description:
+      "Country selector for React built with Chakra UI and Typescript.",
+    image: "",
+    github: "https://github.com/pawanpaudel93/chakra-country-selector",
   },
 ];
